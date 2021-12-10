@@ -82,7 +82,7 @@ const renderDetail = (restaurant) => {
             <label for="userReview">Review</label>
             <textarea rows="3" name="userReview" id="userReview" required></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit">Submit <i class="bi bi-arrow-right"></i></button>
         </form>
       </div>
     </section>
