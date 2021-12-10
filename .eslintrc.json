@@ -19,6 +19,7 @@
     "array-callback-return": "off",
     "indent": "off",
     "no-restricted-globals": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "object-curly-newline": "off"
   }
 }

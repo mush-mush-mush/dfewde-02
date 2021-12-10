@@ -7,6 +7,7 @@ const app = new App({
   button: document.querySelector('#navButton'),
   drawer: document.querySelector('#navDrawer'),
   content: document.querySelector('#mainContent'),
+  menuLinks: document.querySelectorAll('.navbar-menu__link'),
 });
 
 window.addEventListener('hashchange', () => {
