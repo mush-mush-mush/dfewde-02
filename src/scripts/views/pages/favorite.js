@@ -15,7 +15,8 @@ const Favorite = {
     <div class="content container">
         <section class="section">
         <h2 class="section-heading">Your Favorite</h2>
-        <div class="section-content favorite-list">
+          <div class="section-content favorite-list">
+            <h1
           </div>
         </section>
         </div>
@@ -30,9 +31,8 @@ const Favorite = {
       favoriteList.innerHTML = '';
       const restaurants = await FavoriteRestoDB.getAllResto();
 
-      if (!restaurants) {
-        throw 'Failed to fetch';
-      }
+      if (!restaurants) throw 'Failed to fetch';
+      if (restaurants.length < 1) throw 'Nothing has been added';
 
       restaurants.map((item) => {
         const restaurantCard = document.createElement('restaurant-card');
@@ -40,8 +40,9 @@ const Favorite = {
         favoriteList.insertAdjacentElement('beforeend', restaurantCard);
       });
     } catch (error) {
+      console.log(error);
       favoriteList.innerHTML = '';
-      favoriteList.innerHTML = renderError(error.message);
+      favoriteList.innerHTML = renderError(error);
     }
   },
 };

@@ -1,5 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import RestoAPI from '../../models/api';
+import FavoriteRestoDB from '../../models/idb';
 import renderDetail from '../templates/detailTemplate';
 import LikeButtonInitiator from '../../utils/likebutton-init';
 import renderLoading from '../templates/loading';
@@ -25,6 +26,7 @@ const Details = {
 
       LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeBtnContainer'),
+        favoriteRestaurant: FavoriteRestoDB,
         resto: {
           id: restaurant.id,
           name: restaurant.name,
