@@ -15,10 +15,7 @@ window.addEventListener('hashchange', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('body').classList.remove('hidden');
   app.renderPage();
   swRegister();
-});
-
-window.addEventListener('load', () => {
-  document.querySelector('body').classList.remove('hidden');
 });
