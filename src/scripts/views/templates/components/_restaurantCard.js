@@ -31,9 +31,9 @@ class RestaurantCard extends HTMLElement {
     <a href="#/detail/${this._data.id}" aria-label="${this._data.name}, location ${
       this._data.location
     }, rating ${this._data.rating}">
-            <img src="${CONFIG.BASE_IMAGE_URL_S}${this._data.pictureId}" class="card-img" alt="${
-      this._data.name
-    }"  aria-hidden="true">
+            <img src="${CONFIG.BASE_IMAGE_URL_S}${
+      this._data.pictureId
+    }" class="card-img lazyload" alt="${this._data.name}"  aria-hidden="true">
             <div class="card-body"  aria-hidden="true">
                 <small class="card-body__subtitle">${this._data.city}</small>
                 <h3 class="card-body__title">${this._data.name}</h3>
