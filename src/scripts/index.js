@@ -18,3 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
   swRegister();
 });
+
+window.addEventListener('load', () => {
+  document.querySelector('body').classList.remove('hidden');
+});
