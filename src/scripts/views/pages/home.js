@@ -11,12 +11,12 @@ const Home = {
     return `
       <header class="hero">
         <picture>
-        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-m.webp" class="hero-img" alt="hero image" type="image/webp">
-        <source media="(max-width: 960px)" srcset="./images/heros/hero-image_2-m.jpg" class="hero-img" alt="hero image" type="image/jpeg">
-        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-s.webp" class="hero-img" alt="hero image" type="image/webp">
-        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-s.jpg" class="hero-img" alt="hero image" type="image/jpeg">
-        <img src="./images/heros/hero-image_2.webp" class="hero-img" alt="hero image" type="image/webp">
-        <img src="./images/heros/hero-image_2.jpg" class="hero-img" alt="hero image" type="image/jpg">
+        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-m.webp" class="hero-img lazyload" alt="hero image" type="image/webp">
+        <source media="(max-width: 960px)" srcset="./images/heros/hero-image_2-m.jpg" class="hero-img lazyload" alt="hero image" type="image/jpeg">
+        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-s.webp" class="hero-img lazyload" alt="hero image" type="image/webp">
+        <source media="(max-width: 480px)" srcset="./images/heros/hero-image_2-s.jpg" class="hero-img lazyload" alt="hero image" type="image/jpeg">
+        <img src="./images/heros/hero-image_2.webp" class="hero-img lazyload" alt="hero image" type="image/webp">
+        <img src="./images/heros/hero-image_2.jpg" class="hero-img lazyload" alt="hero image" type="image/jpg">
         
         </picture>
         <div class="hero-container container">
