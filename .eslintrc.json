@@ -4,7 +4,7 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["airbnb-base", "plugin:jasmine/recommended"],
+  "extends": ["airbnb-base"],
   "plugins": ["prettier"],
   "parserOptions": {
     "ecmaVersion": 12,
@@ -20,6 +20,8 @@
     "indent": "off",
     "no-restricted-globals": "off",
     "max-len": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "no-prototype-builtins": "off",
+    "prefer-destructuring": "off"
   }
 }

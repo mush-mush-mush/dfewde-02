@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const assert = require('assert');
 
 Feature('Review Restaurant');
@@ -7,13 +8,11 @@ Before(({ I }) => {
 });
 
 Scenario('adding review', async ({ I }) => {
-  I.amOnPage('/');
-
   const firstResto = locate('restaurant-card').first();
   I.click(firstResto);
 
-  const username = 'e2e username';
-  const review = 'e2e review test';
+  const username = 'e2e username23467';
+  const review = 'e2e review test23467';
 
   I.seeElement('#username');
   I.fillField('#username', username);
@@ -24,6 +23,9 @@ Scenario('adding review', async ({ I }) => {
   I.pressKey('Enter');
 
   I.click('#formReview button');
+
+  I.wait(1);
+  I.refreshPage();
 
   const lastReview = locate('.card-body__title').last();
   const textLastReview = await I.grabTextFrom(lastReview);
