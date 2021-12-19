@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 const common = require('./webpack.common');
 
@@ -35,4 +36,5 @@ module.exports = merge(common, {
       },
     ],
   },
+  plugins: [new BundleAnalyzerPlugin()],
 });
